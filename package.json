@@ -1,0 +1,21 @@
+{
+  "name": "cv_builder",
+  "version": "1.0.0",
+  "description": "This is just a docx builder",
+  "homepage": "https://github.com/Llafore/cv_builder#readme",
+  "bugs": {
+    "url": "https://github.com/Llafore/cv_builder/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Llafore/cv_builder.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {}
+}

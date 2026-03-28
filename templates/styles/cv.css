@@ -1,0 +1,113 @@
+@media print {
+
+  body {
+    background: none;
+  }
+
+  .cv {
+    margin: 0;
+    width: 210mm;
+    height: 297mm;
+  }
+
+}
+
+@page {
+  size: A4;
+  margin: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: "Helvetica", Arial, sans-serif;
+    background-color: #dcdcdc;
+}
+
+.cv {
+    width: 210mm;
+    min-height: 297mm;
+    margin: auto;
+    background: #fff;
+    padding: 7mm;
+    color: #000;
+    line-height: 1.4;
+    font-size: 13px;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    border-bottom: 1px solid #000;
+    padding-bottom: 8px;
+}
+
+.alias {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.alias h1 {
+    font-size: 32px;
+}
+
+.alias h2 {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  text-align: right;
+}
+
+.contact span {
+    font-size: 12px;
+}
+
+section {
+    break-inside: avoid;
+    margin-top: 15px;
+}
+
+h3 { 
+    font-size: 14px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #000;
+    padding-bottom: 2px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+}
+
+.item {
+    margin-top: 8px;
+}
+
+.columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+ul {
+    margin-top: 5px;
+    padding-left: 18px;
+}
+
+p {
+    text-align: justify;
+    margin-top: 4px;
+}
