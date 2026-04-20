@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>cv model</title>
+        <link rel="stylesheet" href="../styles/cv.css">
+    </head>
+    <body>
+        <div class="cv">
+
+            {{> header}}
+
+            {{> summary}}
+
+            <section>
+                <h3>FORMAÇÃO ACADÊMICA</h3>
+
+                {{#each college}}
+                    {{> college}}
+                {{/each}}
+                
+            </section>
+
+            <section>
+                <h3>EXPERIÊNCIA PROFISSIONAL</h3>
+
+                {{#each professional_experience}}
+                    {{> professional_experience}}
+                {{/each}}
+
+            </section>
+
+            <section>
+                <h3>HABILIDADES TÉCNICAS</h3>
+
+                {{> skills}}
+
+            </section>
+
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,21 @@
+<div class="college">
+    <div class="row">
+        <strong>{{college_name}} - {{course}}</strong>
+        <span>{{start_date}} - {{end_date}}</span>
+    </div>
+
+    <p>Percentual de rendimento: {{avarage_grade}}</p>
+
+    <div class="columns">
+        <ul>
+            {{#each bulletsSplit.left}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+        <ul>
+            {{#each bulletsSplit.right}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+    </div>
+</div>

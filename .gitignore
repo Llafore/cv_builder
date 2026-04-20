@@ -1,0 +1,15 @@
+# --- Dependency Folders ---
+node_modules/
+
+# --- Environment and Secrets ---
+
+# --- System Files ---
+
+# --- Build and Output Directories ---
+
+# --- Log Files ---
+
+# --- IDE and Text Editor Settings ---
+.vscode/
+
+# --- Temporary Files ---
