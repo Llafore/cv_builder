@@ -30,7 +30,7 @@ export const writeFile = (filePath, file) => {
 
 export const generatePdf = async (html, paths) => {
     const browser = await puppeteer.launch({
-        handless: true,
+        headless: true,
         args: [
             "--no-sandbox",
             "-disable-setuid-sandbox",
