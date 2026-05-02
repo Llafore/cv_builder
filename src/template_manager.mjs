@@ -45,14 +45,10 @@ export const createTemplate = (paths) => {
     for (const file of partialFiles) {
         const name = file.replace(".hbs", "");
         const content = fs.readFileSync(path.join(paths.partialsDir, file), "utf-8");
-        console.log(`File: ${name} - Content: ${content}`)
-        console.log("")
-        console.log("")
         Handlebars.registerPartial(name, content);
     }
 
     const templateSource = fs.readFileSync(paths.templatePath, "utf-8");
     const template = Handlebars.compile(templateSource);
-    console.log(processedData)
     return template(processedData);
 }

@@ -56,6 +56,17 @@
         }
     ],
 
+    "projects": [
+        {
+            "title": "MyMovie – Encontre seu novo filme preferido",
+            "repository_url": "https://github.com/Llafore/cv_builder",
+            "bullets": [
+                "Aplicativo mobile que lista filmes e séries que são relevantes ao usuário, levando em conta avaliações dadas pelo próprio usuário.",
+                "Database alimentado pelo por API externa, sklearn para montagem de matriz de similaridade entre os conteúdos, distribuição dos dados por FAST API."
+            ]
+        }
+    ],
+
     "skills": {
         "bullets": [
             "Python (FastAPI, Kivy)",
