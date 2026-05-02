@@ -2,17 +2,12 @@
 
     <div class="row">
         <strong>{{position}}</strong>
-        <span>{{start_date}} - {{end_date}}</span>
+        <strong>{{start_date}} - {{end_date}}</strong>
     </div>
 
-    <div class="columns">
+    <div class="list">
         <ul>
-            {{#each bulletsSplit.left}}
-            <li>{{this}}</li>
-            {{/each}}
-        </ul>
-        <ul>
-            {{#each bulletsSplit.right}}
+            {{#each bullets}}
             <li>{{this}}</li>
             {{/each}}
         </ul>
