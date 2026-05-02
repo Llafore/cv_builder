@@ -41,6 +41,8 @@ export const generatePdf = async (html, paths) => {
     const page = await browser.newPage();
 
     await page.setContent(html, { waitUntil: "networkidle0" });
+    await page.emulateMediaType('screen');
+    await page.goto("http://127.0.0.1:5500/output/cv.html", { waitUntil: 'networkidle0' });
 
     await page.pdf({
         path: path.join(paths.outputDir, "cv.pdf"),
